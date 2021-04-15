@@ -26,7 +26,11 @@ public class PaymentCard {
         return balance;
     }
 
-    public void setBalance(int amount) {
+    public void addBalance(double amount) {
+        this.balance = balance + amount;
+    }
+
+    public void deductBalance(double amount) {
         this.balance = balance - amount;
     }
 }

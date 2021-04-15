@@ -8,18 +8,17 @@ import javax.persistence.Id;
 @Entity
 public class User {
     @Id
-    @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer employeeId;
 
     private String employeeName;
 
     private Integer paymentCardId;
 
-    public Integer getEmployeeIdId() {
+    public Integer getEmployeeId() {
         return employeeId;
     }
 
-    public void setId(Integer id) {
+    public void setEmployeeId(Integer id) {
         this.employeeId = id;
     }
 
@@ -31,7 +30,7 @@ public class User {
         this.employeeName = name;
     }
 
-    public Integer getPaymentCard() {
+    public Integer getPaymentCardId() {
         return paymentCardId;
     }
 
